@@ -21,7 +21,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/xiaomi/hydrogen/hydrogen-vendor.mk)
+$(call inherit-product-if-exists, vendor/smartron/rimo02a/rimo02a-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.hydrogen.rc
+    init.rimo02a.rc
 
 # Wifi
 PRODUCT_COPY_FILES += \
@@ -63,4 +63,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_b3gbl.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_b3gbl.bin
 
 # Inherit from msm8956-common
-$(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
+$(call inherit-product, device/smartron/msm8956-common/msm8956.mk)

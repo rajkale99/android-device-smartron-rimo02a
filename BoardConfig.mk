@@ -16,12 +16,12 @@
 #
 
 # inherit from common msm8956-common
--include device/xiaomi/msm8956-common/BoardConfigCommon.mk
+-include device/smartron/msm8956-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/hydrogen
+DEVICE_PATH := device/smartron/rimo02a
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := hydrogen
+TARGET_OTA_ASSERT_DEVICE := rimo02a
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 23
@@ -35,11 +35,11 @@ TARGET_LD_SHIM_LIBS := \
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 26838785024 # 26705116160 - 16384
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_hydrogen_defconfig
+TARGET_KERNEL_CONFIG := rk_defconfig
 
 WITH_AICP_CHARGER := false
 WITH_LINEAGE_CHARGER := false
@@ -53,10 +53,10 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Tap-to-Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+#TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-07-01
 
 # inherit from the proprietary version
--include vendor/xiaomi/hydrogen/BoardConfigVendor.mk
+-include vendor/smartron/rimo02a/BoardConfigVendor.mk

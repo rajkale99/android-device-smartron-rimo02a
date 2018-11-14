@@ -19,9 +19,9 @@
 set -e
 
 # Required!
-export DEVICE=hydrogen
+export DEVICE=rimo02a
 export DEVICE_COMMON=msm8956-common
-export VENDOR=xiaomi
+export VENDOR=smartron
 
 export DEVICE_BRINGUP_YEAR=2016
 

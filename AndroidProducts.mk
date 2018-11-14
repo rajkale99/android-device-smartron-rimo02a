@@ -16,5 +16,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_hydrogen.mk \
-    $(LOCAL_DIR)/bliss_hydrogen.mk
+    $(LOCAL_DIR)/full_rimo02a.mk \
+    $(LOCAL_DIR)/arrow_rimo02a.mk
